@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-import 'models/product.dart';
-import 'widgets/product_card.dart';
+import 'screens/home_page.dart';
 
 void main() {
   runApp(const TokoKitaApp());
@@ -13,14 +12,7 @@ class TokoKitaApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: Scaffold(
-        appBar: AppBar(
-          title: const Text("TokoKita"),
-        ),
-        body: ProductCard(
-          product: daftarProduk[0],
-        ),
-      ),
+      home: const HomePage(),
     );
   }
 }
